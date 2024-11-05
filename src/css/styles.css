@@ -107,3 +107,48 @@ header {
   font-weight: normal;
   color: #555; 
 }
+
+@media (max-width: 768px) {
+  #search-form {
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+  #search-form input {
+    width: 100%; 
+  }
+
+  #search-form button {
+    width: 100%; 
+  }
+
+  #gallery {
+    grid-template-columns: repeat(2, 1fr); 
+    padding: 20px 50px; 
+  }
+}
+
+@media (max-width: 480px) {
+  #search-form {
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+  #search-form input {
+    width: 100%; 
+  }
+
+  #search-form button {
+    width: 100%; 
+  }
+
+  #gallery {
+    grid-template-columns: 1fr; 
+    padding: 20px 20px; 
+  }
+
+  .info-box-header,
+  .info-box-values {
+    font-size: 10px; 
+  }
+}
