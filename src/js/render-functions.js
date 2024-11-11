@@ -16,7 +16,7 @@ export function hideLoadingIndicator() {
 export function renderGallery(images) {
   const gallery = document.getElementById('gallery');
   const galleryMarkup = images.map(createGalleryItem).join('');
-  gallery.innerHTML = galleryMarkup;
+  gallery.insertAdjacentHTML('beforeend', galleryMarkup);
 }
 
 function createGalleryItem({ likes, views, comments, downloads, webformatURL, largeImageURL }) {
