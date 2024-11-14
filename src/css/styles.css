@@ -124,6 +124,10 @@ header {
   background-color: #6C8CFF;
 }
 
+#load-more.hidden {
+  display: none;
+}
+
 @media (max-width: 768px) {
   #search-form {
     flex-direction: column;

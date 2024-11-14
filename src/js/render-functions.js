@@ -3,16 +3,6 @@ export function clearGallery() {
   gallery.innerHTML = '';
 }
 
-export function showLoadingIndicator() {
-  const loader = document.getElementById('loader');
-  loader.classList.remove('hidden');
-}
-
-export function hideLoadingIndicator() {
-  const loader = document.getElementById('loader');
-  loader.classList.add('hidden');
-}
-
 export function renderGallery(images) {
   const gallery = document.getElementById('gallery');
   const galleryMarkup = images.map(createGalleryItem).join('');
